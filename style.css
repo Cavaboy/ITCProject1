@@ -1,4 +1,4 @@
-:root{
+:root {
     --dark-blue: hsl(233, 26%, 24%);
     --Lime-Green: hsl(136, 65%, 51%);
     --Bright-Cyan: hsl(192, 70%, 51%);
@@ -7,8 +7,107 @@
     --Very-Light-Gray: hsl(0, 0%, 98%);
     --White: hsl(0, 0%, 100%);
 }
-.header{
-
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+.navbar {
+    position: sticky;
+    display: flex;
+    top: 0;
+    width: 100%;
+    background-color: var(--Very-Light-Gray);
+    align-items: center;
+    padding-top: 10px;
+    justify-content: space-between;
+    padding: .6em 5% 0;
+    z-index: 2;
+}
+.navbarlist {
+    display: none;
+    position: absolute;
+    top: 130%;
+    left: 15%;
+    height: fit-content;
+    width: 70%;
+    text-align: center;
+    background-color: var(--Very-Light-Gray);
+    border-radius: 5%;
+    z-index: 2;
+    line-height: 4vh;
+    box-shadow: 0px 155px 104px 124px rgba(45,49,77,0.71);
+    -webkit-box-shadow: 0px 155px 104px 124px rgba(45,49,77,0.71);
+    -moz-box-shadow: 0px 155px 104px 124px rgba(45,49,77,0.71);
+}
+.navbarlist li {
+    list-style: none;
+}
+.navbarlist li:nth-of-type(6){
+    display: none;
+}
+.navbarlist a{
+    line-height: 1.5;
+    text-decoration: none;
+    color: var(--Bright-Cyan);
+    justify-content: space-around;
+}
+.navbuttons button{
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+#closeicon {
+    display: none;
+}
+main {
+    text-align: center;
+    font-size: 18px;
+    background-color: var(--White);
+}
+.mockupimg {
+    background-image: url(images/bg-intro-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mockupimg img {
+    width: 100%;
+}
+section {
+    padding: 0 30px;
+}
+section h1 {
+    font-weight: 700;
+}
+section p {
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+.reqinvbtn {
+    margin-top: 4vh ;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 40px;
+    background: #31d35c;
+    background: linear-gradient(0deg,#31d35c 5%, #2bb7da 100%);
+    background: -webkit-linear-gradient(0deg,#31d35c 5%, #2bb7da 100%);
+    background: -moz-linear-gradient(0deg,#31d35c 5%, #2bb7da 100%);
+    color: var(--Very-Light-Gray);
+    font-weight: 700;
+}
+.whySec {
+    margin-top: 8vh;
+    background-color: var(--Light-Grayish-Blue) ;
+}
+.allArticles {
+    padding: 0 30px;
+}
+.article img {
+    width: 100%;
 }
 .attribution { 
     font-size: 11px;
