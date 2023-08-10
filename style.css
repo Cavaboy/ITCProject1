@@ -8,11 +8,13 @@
     --White: hsl(0, 0%, 100%);
 }
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
 }
 .navbar {
     position: sticky;
@@ -30,9 +32,8 @@
     display: none;
     position: absolute;
     top: 130%;
-    left: 15%;
     height: fit-content;
-    width: 70%;
+    width: calc(100% - 2em);
     text-align: center;
     background-color: var(--Very-Light-Gray);
     border-radius: 5%;
@@ -44,14 +45,17 @@
 }
 .navbarlist li {
     list-style: none;
+    text-align: center;
+    margin: 2vh 0;
 }
 .navbarlist li:nth-of-type(6){
     display: none;
 }
 .navbarlist a{
+    font-weight: 500;
     line-height: 1.5;
     text-decoration: none;
-    color: var(--Bright-Cyan);
+    color: var(--dark-blue);
     justify-content: space-around;
 }
 .navbuttons button{
@@ -65,7 +69,7 @@
 main {
     text-align: center;
     font-size: 18px;
-    background-color: var(--White);
+    background-color: var(--Very-Light-Gray);
 }
 .mockupimg {
     background-image: url(images/bg-intro-mobile.svg);
@@ -75,6 +79,12 @@ main {
 }
 .mockupimg img {
     width: 100%;
+}
+.mains h1, h2 {
+    font-size: x-large;
+}
+.mains h3 {
+    font-size: larger;
 }
 section {
     padding: 0 30px;
@@ -88,7 +98,6 @@ section p {
     color: var(--Grayish-Blue);
 }
 .reqinvbtn {
-    margin-top: 4vh ;
     padding: 10px 40px;
     border: none;
     border-radius: 40px;
@@ -99,21 +108,88 @@ section p {
     color: var(--Very-Light-Gray);
     font-weight: 700;
 }
+#maininvbtn {
+    margin-top: 4vh ;
+}
 .whySec {
     margin-top: 8vh;
+    padding-top: 8vh ;
+    padding-bottom: 8vh ;
     background-color: var(--Light-Grayish-Blue) ;
 }
-.allArticles {
-    padding: 0 30px;
+.whySec img {
+    margin-top: 8vh;
 }
-.article img {
+.whySec p {
+    margin-top: 2vh;
+}
+.allArticles {
+    margin-top: 8vh;
+}
+.articleCard {
+    margin: 8vh 30px;
+    background-color: var(--White);
+    border-radius: 20px;
+    text-align: left;
+}
+.articleCard img {
     width: 100%;
+    object-fit: contain;
+    border-radius: 20px 20px 0 0;
+}
+.articleCard div {
+    margin: 2vh 2vh 4vh ;
+    font-weight: 300;
+}
+.articleCard h6 {
+    color: var(--Grayish-Blue);
+    font-size: x-small;
+}
+.articleCard h5 {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.articleCard p {
+    font-size: smaller;
+    color: var(--Grayish-Blue);
+}
+.footer {
+    text-align: center;
+    background-color: var(--dark-blue);
+    padding: 1vh 0;
+}
+#footerlogo {
+    filter: brightness(100);
+}
+.iconlist {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.iconlist li{
+    margin-left: 4vw;
+    list-style: none;
+}
+.textlist a {
+    text-decoration: none;
+    color: var(--Light-Grayish-Blue);
+    line-height: 2.4;
+    font-size: small ;
+    font-weight: 300;
+}
+#footinvbtn {
+    margin: 1vh 0 2vh;
+}
+.footer span {
+    color: var(--Grayish-Blue);
+    font-size: small;
 }
 .attribution { 
-    font-size: 11px;
+    font-size: x-small;
     text-align: center; 
 }
 .attribution a {
+    font-size: small;
     color: hsl(228, 45%, 44%); 
     }
 @media screen and (min-width: 768px) {
