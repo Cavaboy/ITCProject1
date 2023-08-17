@@ -23,7 +23,6 @@
     width: 100%;
     background-color: var(--Very-Light-Gray);
     align-items: center;
-    padding-top: 10px;
     justify-content: space-between;
     padding: .6em 5% 0;
     z-index: 2;
@@ -87,12 +86,13 @@ main {
     font-size: larger;
 }
 section {
-    padding: 0 30px;
+    padding: 0;
 }
 section h1 {
     font-weight: 700;
 }
 section p {
+    padding: 0 30px;
     line-height: 1.5;
     font-weight: 400;
     color: var(--Grayish-Blue);
@@ -127,19 +127,18 @@ section p {
     margin-top: 8vh;
 }
 .articleCard {
-    margin: 8vh 30px;
+    margin: 8vh 3vw;
     background-color: var(--White);
     border-radius: 20px;
     text-align: left;
 }
 .articleCard img {
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
     border-radius: 20px 20px 0 0;
 }
 .articleCard div {
-    margin: 2vh 2vh 4vh ;
-    font-weight: 300;
+    margin: 2vh 2vh 0;
 }
 .articleCard h6 {
     color: var(--Grayish-Blue);
@@ -196,5 +195,57 @@ section p {
     
 }
 @media screen and (min-width: 1024px) {
-    
+    .navbar div {
+        display: none;
+    }
+    .navbarlist {
+        display: inherit;
+        position: inherit;
+        background-color: none;
+        border-radius: 0;
+        width: 100%;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+    .navbarlist li {
+        margin-left: 2vw;
+    }
+    .navbarlist a {
+        font-weight: 700;
+    }
+    .navbarlist li:nth-of-type(1) {
+        margin-left: auto;
+    }
+    .navbarlist li:nth-of-type(6) {
+        display: flex;
+        margin-left: auto;
+    }
+    section {
+        display: flex;
+    }
+    .whyTitle {
+        text-align: left;
+        position: absolute;
+    }
+    .allArticles {
+        display: flex;
+        justify-content: space-around;
+    }
+    .allArticles h2{
+        position: absolute;
+        left: 5%;
+    }
+    .articleCard {
+        margin: 6vh 4vw 8vh;
+    }
+    .articleCard div {
+        padding: 0 1vw 0 ;
+    }
+    .articleCard img {
+        max-height: 115px;
+    }
+    .articleCard p {
+        font-size: medium;
+    }
 }
