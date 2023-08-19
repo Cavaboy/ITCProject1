@@ -212,13 +212,6 @@ section p {
     font-size: x-small;
     text-align: center; 
 }
-.attribution a {
-    font-size: small;
-    color: hsl(228, 45%, 44%); 
-    }
-.reqinvbtn :hover {
-    background: black ;
-}
 @media screen and (min-width: 768px) {
     
 }
