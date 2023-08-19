@@ -57,6 +57,7 @@
     text-decoration: none;
     color: var(--dark-blue);
     justify-content: space-around;
+    transition: border .2s linear;
 }
 .navbuttons button{
     border: none;
