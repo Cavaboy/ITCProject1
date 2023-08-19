@@ -57,7 +57,7 @@
     text-decoration: none;
     color: var(--dark-blue);
     justify-content: space-around;
-    transition: border .2s linear;
+    transition: border .2s, color .2s linear;
 }
 .navbuttons button{
     border: none;
@@ -110,6 +110,7 @@ section p {
     color: var(--Very-Light-Gray);
     font-weight: 700;
     cursor: pointer;
+    transition: filter .2s, box-shadow .1s;
 }
 #maininvbtn {
     margin-top: 4vh ;
@@ -186,6 +187,10 @@ section p {
     color: var(--Light-Grayish-Blue);
     font-size:large ;
     font-weight: 300;
+    transition: color .2s linear;
+}
+.footericon path {
+    transition: fill .5s;
 }
 .footericon path:hover {
     fill: var(--Lime-Green);
