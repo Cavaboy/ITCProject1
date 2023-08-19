@@ -346,11 +346,10 @@ section p {
         margin-left: auto;
         list-style: none;
     }
-    #liinvbtn {
+    #liend {
         text-align: end;
     }
     .footer span {
-        position: relative;
-        left: 4.5vw;
+        padding-right: 2%;
     }
 }
