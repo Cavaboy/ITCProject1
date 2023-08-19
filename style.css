@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: space-between;
     padding: .6em 5% 0;
-    z-index: 2;
+    z-index: 4;
 }
 .navbarlist {
     display: none;
@@ -155,12 +155,13 @@ section p {
 .footer {
     text-align: center;
     background-color: var(--dark-blue);
-    padding: 1vh 0;
+    padding: 4vh 0;
 }
 #footerlogo {
     filter: brightness(100);
 }
 .iconlist {
+    padding-top: 2.4vh;
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -169,11 +170,13 @@ section p {
     margin-left: 4vw;
     list-style: none;
 }
+.textlist li {
+    line-height: 2.4;
+}
 .textlist a {
     text-decoration: none;
     color: var(--Light-Grayish-Blue);
-    line-height: 2.4;
-    font-size: small ;
+    font-size:large ;
     font-weight: 300;
 }
 #footinvbtn {
@@ -221,12 +224,83 @@ section p {
         display: flex;
         margin-left: auto;
     }
+    .mains h1, h2 {
+        font-weight: 100;
+    }
+    .mains h3 {
+        font-weight: 100;
+    }
     section {
         display: flex;
+        z-index: 1;
+    }
+    .descSec {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: -3vh;
+    }
+    .descSec .title {
+        margin-left: 5%;
+        padding-right: 10vw;
+        text-align: left;
+    }
+    .descSec .title h1 {
+        font-size: 3rem;
+    }
+    .descSec .title p {
+        padding-top: 2vh;
+        padding-left: 0;
+    }
+    .mockupimg {
+        padding-left: 10%;
+        margin-left: -10%;
+        background-image: url(images/bg-intro-desktop.svg);
+        background-position: left;
+        background-size: auto;
+        background-position-x: -4vw;
+        background-position-y: -29.6vh;
+        z-index: 2;
+    }
+    .mockupimg img {
+        width: auto;
+        margin-bottom: -25vh;
+    }
+    .whySec {
+        margin-top: 0;
+        padding-top: 12vh;
+        display: block;
     }
     .whyTitle {
+        position: relative;
+        left: 5%;
         text-align: left;
-        position: absolute;
+        width: 50%;
+        margin-top: -2vh;
+        padding-bottom: 2vh;
+    }
+    .whyTitle h2 {
+        font-size: 2.5rem;
+    }
+    .whyTitle p {
+        padding: 0 8vw 0 0;
+    }
+    .items {
+        display: flex;
+        align-items: center;
+    }
+    .whyCard {
+        margin-top: 8vh;
+        margin-left: 5%;
+        text-align: left;
+        margin-right: 5%;
+    }
+    .whyCard img {
+        padding-bottom: 4vh;
+    }
+    .whyCard p {
+        padding: 0;
+        margin-top: 4vh;
     }
     .allArticles {
         display: flex;
@@ -235,9 +309,10 @@ section p {
     .allArticles h2{
         position: absolute;
         left: 5%;
+        font-size: 2.5rem;
     }
     .articleCard {
-        margin: 6vh 4vw 8vh;
+        margin: 15vh 5% 17vh;
     }
     .articleCard div {
         padding: 0 1vw 0 ;
@@ -246,6 +321,36 @@ section p {
         max-height: 115px;
     }
     .articleCard p {
+        padding-inline: 0;
         font-size: medium;
+    }
+    .footer {
+        display: grid;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #footerlogo {
+        position: relative;
+        top: 1.8vh;
+    }
+    .textlist {
+        columns: 4;
+        column-gap: 0;
+        list-style-type: none;
+    }
+    .iconlist {
+        justify-content: unset;
+        padding-top: 8vh ;
+    }
+    .iconlist li{
+        margin-left: auto;
+        list-style: none;
+    }
+    #liinvbtn {
+        text-align: end;
+    }
+    .footer span {
+        position: relative;
+        left: 4.5vw;
     }
 }
